@@ -145,12 +145,27 @@ body {
       display: inline-block;
       border-radius: 50%;
       padding: 3px;
-      background: transparent; }
+      background: transparent;
+      margin-left: 50px; }
     .banner__slider-item__img {
       border-radius: 50%;
       max-width: 80px;
       max-height: 80px;
       border: 3px solid #db2e2e; }
+    .banner__slider-item__content {
+      text-align: justify;
+      word-wrap: break-word;
+      max-width: 400px;
+      margin: 0 100px; }
+    .banner__slider-item__button {
+      color: #fff;
+      font-size: 13px;
+      padding: 5px 20px;
+      font-weight: bold;
+      background-color: #db2e2e;
+      border: none; }
+    .banner__slider-item__button:hover {
+      background-color: "Oswald", sans-serif; }
 
 /* END BANNER*/
 .food {
@@ -616,3 +631,5 @@ body {
   .phone-order__content {
     position: relative;
     top: 150px; } }
+
+/*# sourceMappingURL=main.css.map */

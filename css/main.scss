@@ -198,6 +198,7 @@ body {
                 border-radius: 50%;
                 padding: 3px;
                 background: transparent;
+                margin-left: 50px;
 
             }
             &__img {
@@ -205,6 +206,24 @@ body {
                 max-width: 80px;
                 max-height: 80px;
                 border: 3px solid $color-primary;
+            }
+
+            &__content{
+                text-align: justify;
+                word-wrap: break-word;
+                max-width: 400px;
+                margin: 0 100px;
+            }
+            &__button{
+                color: #fff;
+                font-size: 13px;
+                padding: 5px 20px;
+                font-weight: bold;
+                background-color: $color-primary;
+                border: none;
+            }
+            &__button:hover{
+                background-color:$font-secondary;
             }
         }
     }
