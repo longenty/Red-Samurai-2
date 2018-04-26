@@ -133,11 +133,35 @@ body {
     max-height: 200px;
     max-width: 992px;
     padding: 20px; }
+    .banner__slider .caret-right-wrapper,
+    .banner__slider .caret-left-wrapper {
+      position: absolute;
+      top: 25%;
+      background-color: #db2e2e;
+      width: 30px;
+      height: 50%;
+      justify-content: center;
+      display: flex;
+      transition: 0.2s;
+      align-items: center; }
+      .banner__slider .caret-right-wrapper:hover,
+      .banner__slider .caret-left-wrapper:hover {
+        background-color: #c22121; }
     .banner__slider .fa-caret-left,
     .banner__slider .fa-caret-right {
-      position: absolute;
-      top: 50%;
-      display: block; }
+      font-size: 20px;
+      /*position: absolute;
+      top: 25%;
+      background-color: $color-primary;
+      width: 30px;
+      height: 50%;
+      text-align: center;
+      font-size: 20px;
+      display: block;*/ }
+    .banner__slider .caret-left-wrapper {
+      left: 0; }
+    .banner__slider .caret-right-wrapper {
+      right: 0; }
     .banner__slider-item__imgwrap, .banner__slider-item__content, .banner__slider-item__button {
       display: inline-block; }
     .banner__slider-item__imgwrap {
@@ -166,6 +190,8 @@ body {
       border: none; }
     .banner__slider-item__button:hover {
       background-color: "Oswald", sans-serif; }
+    .banner__slider .slick-list {
+      margin: 0 15px; }
 
 /* END BANNER*/
 .food {

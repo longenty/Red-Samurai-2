@@ -12,8 +12,9 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
      <link rel="stylesheet" href="css/flexslider.css">
      <link rel="stylesheet" href="css/slick.css" type="text/css">
-     <link rel="stylesheet" href="css/slick-theme.css">
-     <link rel="stylesheet" href="css/main.css">
+     <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
+     <link rel="stylesheet" href="css/animate.css" type="text/css">
+     <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
 <body>
 <section class="top">
@@ -88,10 +89,10 @@
                <div class="row">
                     <div class="col-sm-6">
                          <div class="banner-content">
-                              <h2 class="banner__title ">
+                              <h2 class="banner__title animated fadeInLeft">
                                    the best <span class="color-red">asian cuisine</span> in all the city
                               </h2>
-                              <a href="#" class="btn btn-lg banner__btn text-uppercase">start your online order!</a>
+                              <a href="#" class="btn btn-lg banner__btn text-uppercase animated bounceInDown">start your online order!</a>
                          </div>
                     </div>
 
@@ -140,7 +141,7 @@
 
 <section class="food">
      <div class="container ">
-          <div class="section-body">
+          <div class="section-body animated bounceInRight">
                <div class="row">
                     <div class="col-md-4 ">
                          <div class=" food-item food__sushi">
@@ -192,7 +193,7 @@
                <h2 class="section-heading__title specials__title"><span>samurai</span> specials</h2>
           </div>
           <div class="section-body">
-               <div class="row">
+               <div class="row animated fadeInLeftBig">
                     <div class="col-lg-3 col-sm-6 ">
                          <div class="specials-item">
                               <a href="#" class="specials__link salmon__link"><img src="image/salmon-roll.jpg" alt="salmon image"></a>
@@ -331,7 +332,7 @@
           <div class="section-body ourteam-body">
                <div class="row">
                     <div class="col-md-4">
-                         <div class="ourteam-item">
+                         <div class="ourteam-item animated bounceInLeft">
                               <div class="ourteam-item-imgwrap">
                                    <img src="image/ourteam-image.jpg" alt="ceo image" class="ourteam-item__img">
                               </div>
@@ -361,7 +362,7 @@
                          </div><!--End .ourteam-item-->
                     </div>
                     <div class="col-md-4">
-                         <div class="ourteam-item">
+                         <div class="ourteam-item animated bounceInDown">
                               <div class="ourteam-item-imgwrap">
                                    <img src="image/ourteam-image.jpg" alt="ceo image" class="ourteam-item__img">
                               </div>
@@ -391,7 +392,7 @@
                          </div><!--End .ourteam-item-->
                     </div>
                     <div class="col-md-4">
-                         <div class="ourteam-item">
+                         <div class="ourteam-item animated bounceInRight">
                               <div class="ourteam-item-imgwrap">
                                    <img src="image/ourteam-image.jpg" alt="ceo image" class="ourteam-item__img">
                               </div>
@@ -466,7 +467,7 @@
 <section class="phone-order">
    <div class="container">
       <div class="row">
-         <img class="d-none d-lg-block col-lg-3 phone-order__order-now__image" src="image/order-now.png" alt="order now ">
+         <img class="d-none d-lg-block col-lg-3 phone-order__order-now__image animated bounce" src="image/order-now.png" alt="order now ">
          <div class="col-lg-6 phone-order__content">
             <h2 class="phone-order__title">Make your <span>Phone Order</span></h2>
             <p class="phone-order__desc">ri velit numquam facilis tempore, molestiae aliquid eaque maxime repellendus iste totam necessitatibus repudiandae neque ipsum</p>
@@ -647,7 +648,6 @@
 
 <section class="testimonial">
    <div class="container-fluid">
-<<<<<<< HEAD
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
              <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -702,7 +702,7 @@
           </div>
           <div class="section-body contact-us__body">
                <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 animated fadeInLeft">
                          <div class="media">
                               <div class="contact-us__img-wrapper">
                                    <img class="contact-us__img" src="image/icon-pin-adress.jpg" alt="Generic placeholder image">
@@ -719,7 +719,7 @@
                               </div>
                          </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 animated fadeInUp">
                          <div class="media">
                               <div class="contact-us__img-wrapper">
                                    <img class="contact-us__img" src="image/icon-phone.jpg" alt="Generic placeholder image">
@@ -736,7 +736,7 @@
                               </div>
                          </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 animated fadeInRight">
                          <div class="media">
                               <div class="contact-us__img-wrapper">
                                    <img class="contact-us__img" src="image/icon-envelop.jpg" alt="Generic placeholder image">
@@ -880,11 +880,11 @@
         })
 
         $('.banner__slider').slick({
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed:5000,
             arrows:true,
-            nextArrow: '<i class="fa fa-caret-right"></i>',
-            prevArrow: '<i class="fa fa-caret-left"></i>',
+            nextArrow: '<a class="caret-right-wrapper"><i class="fa fa-caret-right "></i></a>',
+            prevArrow: '<a class="caret-left-wrapper"><i class="fa fa-caret-left "></i></a>'
     });
     });
 </script>
