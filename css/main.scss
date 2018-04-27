@@ -212,11 +212,15 @@ body {
         .caret-right-wrapper{
             right: 0;
         }
+
         &-item{
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
             &__imgwrap,
             &__content,
             &__button{
-                display: inline-block;
+                /*display: inline-block;*/
             }
             &__imgwrap {
                 border: 1px solid #ccc;
@@ -239,6 +243,13 @@ body {
                 word-wrap: break-word;
                 max-width: 400px;
                 margin: 0 100px;
+                font-family: $font-secondary;
+                &__title{
+                    font-size: 1.2rem;
+                    span{
+                        color: $color-primary;
+                    }
+                }
             }
             &__button{
                 color: #fff;
@@ -247,9 +258,14 @@ body {
                 font-weight: bold;
                 background-color: $color-primary;
                 border: none;
+                display: flex;
+                align-self: flex-end;
+                transition: $transition;
             }
             &__button:hover{
-                background-color:$font-secondary;
+                background-color:$color-secondary;
+                text-decoration: none;
+                color:#fff;
             }
         }
         .slick-list{

@@ -162,34 +162,48 @@ body {
       left: 0; }
     .banner__slider .caret-right-wrapper {
       right: 0; }
-    .banner__slider-item__imgwrap, .banner__slider-item__content, .banner__slider-item__button {
-      display: inline-block; }
-    .banner__slider-item__imgwrap {
-      border: 1px solid #ccc;
-      display: inline-block;
-      border-radius: 50%;
-      padding: 3px;
-      background: transparent;
-      margin-left: 50px; }
-    .banner__slider-item__img {
-      border-radius: 50%;
-      max-width: 80px;
-      max-height: 80px;
-      border: 3px solid #db2e2e; }
-    .banner__slider-item__content {
-      text-align: justify;
-      word-wrap: break-word;
-      max-width: 400px;
-      margin: 0 100px; }
-    .banner__slider-item__button {
-      color: #fff;
-      font-size: 13px;
-      padding: 5px 20px;
-      font-weight: bold;
-      background-color: #db2e2e;
-      border: none; }
-    .banner__slider-item__button:hover {
-      background-color: "Oswald", sans-serif; }
+    .banner__slider-item {
+      display: flex !important;
+      justify-content: center;
+      align-items: center; }
+      .banner__slider-item__imgwrap, .banner__slider-item__content, .banner__slider-item__button {
+        /*display: inline-block;*/ }
+      .banner__slider-item__imgwrap {
+        border: 1px solid #ccc;
+        display: inline-block;
+        border-radius: 50%;
+        padding: 3px;
+        background: transparent;
+        margin-left: 50px; }
+      .banner__slider-item__img {
+        border-radius: 50%;
+        max-width: 80px;
+        max-height: 80px;
+        border: 3px solid #db2e2e; }
+      .banner__slider-item__content {
+        text-align: justify;
+        word-wrap: break-word;
+        max-width: 400px;
+        margin: 0 100px;
+        font-family: "Oswald", sans-serif; }
+        .banner__slider-item__content__title {
+          font-size: 1.2rem; }
+          .banner__slider-item__content__title span {
+            color: #db2e2e; }
+      .banner__slider-item__button {
+        color: #fff;
+        font-size: 13px;
+        padding: 5px 20px;
+        font-weight: bold;
+        background-color: #db2e2e;
+        border: none;
+        display: flex;
+        align-self: flex-end;
+        transition: 0.2s; }
+      .banner__slider-item__button:hover {
+        background-color: #c22121;
+        text-decoration: none;
+        color: #fff; }
     .banner__slider .slick-list {
       margin: 0 15px; }
 
